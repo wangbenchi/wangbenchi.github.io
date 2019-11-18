@@ -1,2 +1,4 @@
 name: Attention, memory and learning
 markdown: kramdown
+
+permalink: /news/:year/:month/:day/:title
