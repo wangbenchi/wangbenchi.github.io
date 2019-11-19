@@ -17,6 +17,10 @@ a {
     text-decoration: none;
     color: #999;
 }
+a1 {
+    font-size: 1.2em;
+    color: #141;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -29,14 +33,15 @@ h2 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #d13737;
 }
-h3 {
-    font-size: 1.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: #141;
-}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
+    color: #333;
+}
+p1 {
+    font-size: 0.8em;
+    line-height: 0.7em;
     color: #333;
 }
 footer {
