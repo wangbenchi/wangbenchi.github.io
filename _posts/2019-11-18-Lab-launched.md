@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Our lab is founded in 2019"
+title: "Our lab is founded"
 date: 2019-11-18
 ---
 
