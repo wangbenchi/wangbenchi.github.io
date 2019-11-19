@@ -17,10 +17,7 @@ a {
     text-decoration: none;
     color: #999;
 }
-a1 {
-    font-size: 1.2em;
-    color: #141;
-}
+
 a:hover {
     text-decoration: underline;
 }
@@ -39,11 +36,7 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-p1 {
-    font-size: 1.0em;
-    line-height: 0.9em;
-    color: #333;
-}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
