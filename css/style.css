@@ -347,17 +347,50 @@ p.para{
 .span_of_3:first-child{
 	margin: 0;
 }
+.span1_wbc{
+    margin_left:20px
+    margin-bottom: 20px;
+}
+.span1_wbc_text{
+	padding: 20px;
+}
+.span1_researchers{
+    margin_left:20px
+    margin-bottom: 20px;
+}
+.span1_researchers_text{
+	padding: 20px;
+}
+.span1_doctoral{
+    float:left;
+	width: 16%;
+	height: 250px;
+	margin-left: 3.5%;
+    margin-bottom: 40px;
+}
+.span1_doctoral img{
+	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+     height: 100%; /* 设置图片的高度为容器的高度 */
+     object-fit: cover;
+}
+.span1_doctoral_text{
+	padding: 20px;
+}
 .span1_of_3{
 	float:left;
-	width: 30.3333%;
-	margin-left: 3.3333%;	
-	border: 1px solid rgb(206, 206, 206);
+	width: 16%;
+	height: 250px;
+	margin-left: 3.5%;
+    margin-bottom: 40px;
 }
+
 .span1_of_3:first-child{
 	margin-left: 0;
 }
 .span1_of_3 img{
-	width:100%;
+	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+     height: 100%; /* 设置图片的高度为容器的高度 */
+     object-fit: cover;
 }
 .span1_of_3_text{
 	padding: 20px;
