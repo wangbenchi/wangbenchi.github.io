@@ -363,13 +363,13 @@ p.para{
 }
 .span1_doctoral{
     float:left;
-	width: 16%;
-	height: 250px;
-	margin-left: 3.5%;
+    width: 16%;
+    height: 250px;
+    margin-left: 3%;
     margin-bottom: 40px;
 }
 .span1_doctoral img{
-	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+     width: 100%; /* 设置图片的宽度为容器的宽度 */
      height: 100%; /* 设置图片的高度为容器的高度 */
      object-fit: cover;
 }
@@ -377,10 +377,10 @@ p.para{
 	padding: 20px;
 }
 .span1_of_3{
-	float:left;
-	width: 16%;
-	height: 250px;
-	margin-left: 3.5%;
+    float:left;
+    width: 16%;
+    height: 250px;
+    margin-left: 3%;
     margin-bottom: 40px;
 }
 
