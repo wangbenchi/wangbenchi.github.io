@@ -371,8 +371,8 @@ p.para{
 }
 .span1_doctoral{
     float:left;
-	width: 10%;
-	height: 120px;
+	width: 11%;
+	height: 140px;
 	margin-left: 7%;
     margin-bottom: 40px;
 }
@@ -386,7 +386,7 @@ p.para{
 }
 .sapn1_postgraduate{
     float:left;
-	width: 12%;
+	width: 13%;
 	height: 180px;
 	margin-left: 7%;
     margin-bottom: 40px;
@@ -401,13 +401,13 @@ p.para{
 }
 .sapn1_collaboration{
     float:left;
-	width: 18%;
+	width: 20%;
 	height: 250px;
 	margin-left: 5%;
     margin-bottom: 40px;
 }
 .sapn1_collaboration img{
-	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+	width: 100%; /* 设置图片的宽度为容器的宽度 */
      height: 100%; /* 设置图片的高度为容器的高度 */
      object-fit: cover;
 }
