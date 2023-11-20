@@ -355,32 +355,71 @@ p.para{
 	padding: 20px;
 }
 .span1_researchers{
-    margin_left:20px
-    margin-bottom: 20px;
+    float: left;
+	width: 12%;
+	height: 150px;
+	margin-left: 7%;
+    margin-bottom: 40px;
+}
+.span1_researchers img{
+	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+     height: 100%; /* 设置图片的高度为容器的高度 */
+     object-fit: cover;
 }
 .span1_researchers_text{
 	padding: 20px;
 }
 .span1_doctoral{
     float:left;
-    width: 16%;
-    height: 250px;
-    margin-left: 3%;
+	width: 10%;
+	height: 100px;
+	margin-left: 7%;
     margin-bottom: 40px;
 }
 .span1_doctoral img{
-     width: 100%; /* 设置图片的宽度为容器的宽度 */
+	 width: 100%; /* 设置图片的宽度为容器的宽度 */
      height: 100%; /* 设置图片的高度为容器的高度 */
      object-fit: cover;
 }
 .span1_doctoral_text{
 	padding: 20px;
 }
-.span1_of_3{
+.sapn1_postgraduate{
     float:left;
-    width: 16%;
-    height: 250px;
-    margin-left: 3%;
+	width: 10%;
+	height: 100px;
+	margin-left: 7%;
+    margin-bottom: 40px;
+}
+.sapn1_postgraduate img{
+	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+     height: 100%; /* 设置图片的高度为容器的高度 */
+     object-fit: cover;
+}
+.span1_postgraduate_text{
+	padding: 20px;
+}
+.sapn1_collaboration{
+    float:left;
+	width: 16%;
+	height: 250px;
+	margin-left: 7%;
+    margin-bottom: 40px;
+}
+.sapn1_collaboration img{
+	 width: 100%; /* 设置图片的宽度为容器的宽度 */
+     height: 100%; /* 设置图片的高度为容器的高度 */
+     object-fit: cover;
+}
+.span1_collaboration_text{
+	padding: 20px;
+}
+
+.span1_of_3{
+	float:left;
+	width: 12%;
+	height: 100px;
+	margin-left: 5%;
     margin-bottom: 40px;
 }
 
