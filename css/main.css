@@ -139,7 +139,7 @@ h5{
 a,p,li,input,textarea{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: #818181;
+    
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -260,7 +260,6 @@ a:active{
 .clean-blurb-icon-only{
 	margin-bottom: 50px;
 	text-align: center;
-	border: 2px solid transparent;
 	padding: 20px;
 }
 .clean-blurb-icon-only:hover {

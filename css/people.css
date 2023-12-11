@@ -1,10 +1,20 @@
 
-#tutor{
-    height: 200px;
-    max-width: 100%;
+section img {
+    border-radius: 50%;
+}
+
+#tutor {
+    max-width: 60%;
     height: auto;
 }
 
-.people{
-    padding: 20px;
+.people {
+    padding: 20px 150px 0px 150px;
+}
+
+.student {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: auto;
 }

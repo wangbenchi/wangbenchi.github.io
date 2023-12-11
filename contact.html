@@ -1,232 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE HTML>
-<html>
 <head>
-<title>Contact</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- start top_js_button -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-   <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- PAGE TITLE -->
+    <title>Contact Us</title>
+
+    <!-- ===================================
+        FAVICON ICON
+    ==================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- ===================================
+        NORMALIZE CSS
+    ==================================== -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- ===================================
+        BOOTSTRAP 
+    ==================================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ===================================
+        GOOGLE FONTS
+    ==================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' rel='stylesheet' type='text/css'>
+
+    <!-- ===================================
+        FONTS ICON
+    ==================================== -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
+    <!-- ===================================
+        PLUGIN
+    ==================================== -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slider-pro.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ===================================
+        MAIN STYLESHEET
+    ==================================== -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/color.css" id="colors" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+        <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
 </head>
+
 <body>
-<!-- start header -->
-<div class="header_bg">
-<div class="wrap">
-	<div class="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""/> </a>
-		</div>
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
-<!-- start header -->
-<div class="header_btm">
-<div class="wrap">
-	<div class="header_sub">
-		<div class="h_menu">
-			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About us</a></li>
-				<li><a href="service.html">Service</a></li>
-				<li><a href="index.html">Pages</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact us</a></li>
-			</ul>
-		</div>
-		<div class="h_search">
-    		<form>
-    			<input type="text" value="" placeholder="search something...">
-    			<input type="submit" value="">
-    		</form>
-		</div>
-        <div class="menu">
-        	<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About us</a></li>
-				<li><a href="service.html">Service</a></li>
-				<li><a href="index.html">Pages</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="search">
-            <form action="/iphone/search.html">
-                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
-            </form>
-        </div>
-        <div class="sub-head">
-        	<ul>
-            	<li><a href="#" id="menu">Menu  <span></span></a></li>
-            	<li><a href="#" id="search">Search <span></span></a></li>
-            </ul>
-            <div class="clear"></div>
-        </div>
-	   <script type="text/javascript">
-		$(".menu,.search").hide();
-		$("#menu").click(function(){
-			$(".menu").toggle();
-			$(".search").hide();
-			$("#search").removeClass("active");
-			$("#menu").toggleClass("active");
-		});
-		$("#search").click(function(){
-			$(".search").toggle();
-			$(".menu").hide();
-			$("#menu").removeClass("active");
-			$("#search").toggleClass("active");
-			$(".text").focus();
-		});
-	</script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<div class="clear"></div>
+    <!-- ===================================
+        PRELOADER
+    ==================================== -->
+    <div class="preloader">
+        <div class="status"></div>
+    </div>
 
-		<div class="clear"></div>
-</div>
-</div>
-</div>
-<!-- start top_bg -->
-<div class="top_bg">
-<div class="wrap">
-	<div class="top">
-		<h2>contact us</h2>
- 	</div>
-</div>
-</div>
-<!-- start main -->
-<div class="wrap">
-	<div class="main">
-	 	 <div class="contact">				
-					<div class="contact_info">
-						<h2 class="style">get in touch</h2>
-			    	 		<div class="map">
-					   			<iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#777777;text-align:left;font-size:13px;">View Larger Map</a></small>
-					   		</div>
-      				</div>
-				  <div class="contact-form">
-			 	 <div class="content">
-		 	 	<h2>Contact Us</h2>
-		 	 </div>
-					    <form method="post" action="contact-post.html">
-					    	<div>
-						    	<span><label>Name</label></span>
-						    	<span><input name="userName" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label>E-mail</label></span>
-						    	<span><input name="userEmail" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						     	<span><label>Mobile</label></span>
-						    	<span><input name="userPhone" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label>Subject</label></span>
-						    	<span><textarea name="userMsg"> </textarea></span>
-						    </div>
-						   <div>
-						   		<span><input type="submit" class="" value="Submit us"></span>
-						  </div>
-					    </form>
-				    </div>
-  				<div class="clear"> </div>		
-			  </div>
-		</div>
-</div>
-<!-- start footer -->
-<div class="footer_bg">
-<div class="wrap">
-	<div class="footer">
-		<!-- start span_of_4 -->
-		<div class="span_of_4">
-			<div class="span1_of_4">
-				<h4>popular post</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<ul class="f_nav1">
-					<li class="timer"><a href="#">25-september 2013 </a></li>
-				</ul>
-				<p class="top">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<ul class="f_nav1">
-					<li class="timer"><a href="#">25-september 2013 </a></li>
-				</ul>
-			</div>
-			<div class="span1_of_4">
-				<h4>tags</h4>
-				<p>It is a long established fact that a reader will be distracted by the<big>readable</big> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal <big>blog</big> Many desktop publishing packages and web page editors now use Lorem.</p>
-			</div>
-			<div class="span1_of_4">
-				<h4>a little about us</h4>
-				<p class="btm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-				<p>It is a long established fact that a reader will be of a page when looking at its layout.</p>
+    <!-- ===================================
+        HEADER
+    ==================================== -->
+    <header>
+        <!-- Navigation Menu start-->
+        <nav class="navbar clean-main-menu" role="navigation">
+            <div class="container">
 
-			</div>
-			<div class="span1_of_4">
-				<h4>get in touch</h4>
-				<p class="btm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
-				<p class="btm1 pin">Texas, US</p>
-				<p class="btm1 mail"><a href="mailto:info@mycompany.com">info(at)mycompany.com </a></p>
-				<p class="call">01234 444 777</p>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-</div>
-</div>
-<!-- start footer -->
-<div class="footer_bg1">
-<div class="wrap">
-	<div class="footer1">
-		<!-- scroll_top_btn -->
-	    <script type="text/javascript">
-			$(document).ready(function() {
-			
-				var defaults = {
-		  			containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear' 
-		 		};
-				
-				
-				$().UItoTop({ easingType: 'easeOutQuart' });
-				
-			});
-		</script>
-		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-		<!--end scroll_top_btn -->
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-|
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+                <!-- Navbar Toggle -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html"><img class="logo" id="logo" src="images/logo.png"
+                            alt="Page"></a>
+
+                </div>
+                <!-- Navbar Toggle End -->
+
+                <!-- navbar-collapse start-->
+                <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
+                    <ul class="nav navbar-nav clean-menu-wrapper">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="people.html">People</a>
+                        </li>
+                        <li>
+                            <a href="publication.html">Publication</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li class="active">
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse end-->
+
+            </div>
+        </nav>
+        <!-- Navigation Menu end-->
+    </header>
+
+    <section id="offer" class="clean-section-wrapper clean-offer-section "
+        style="padding-top: 160px;padding-left: 200px;padding-bottom: 300px;">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-info" style="margin-top: 40px;">
+            <p><strong>Address：</strong>
+            </p>
+            <p>No. 55, West Zhongshan Avenue, Tianhe District, </p>
+            <p>Guangzhou, Guangdong Province, China, 510631. </p>
+            <p>Institute of Brain Science and Rehabilitation Medicine, South China Normal
+                University</p><br>
+            <p><strong>E-mail：</strong></p>
+            <p>wangbenchi.swift@gmail.com</p>
+            
+        </div>
+    </section>
+
+
+
+    <!-- ===================================
+        FOOTER SECTION
+    ==================================== -->
+    <footer class="background-two">
+        <div class="container">
+            <div class="row">
+                <div class="clean-footer-content">
+
+                    <div class="clean-footer-logo wow bounceIn" data-wow-offset="0">
+                        <a href="index.html">
+                            <img id="logo-footer" src="images/logo.png" alt="clean">
+                        </a>
+                    </div>
+
+                    <p class="clean-copyright-info">Copyright &copy; 2023 AMLAB
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ===================================
+        SCRIPTS
+    ==================================== -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
