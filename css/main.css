@@ -25,8 +25,8 @@
 }
 
 .status {
-    width: 128px;
-    height: 128px;
+    width: 900px;
+    height: 195px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -34,8 +34,8 @@
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
-            background-size: cover;
-    margin: -70px 0 0 -70px;
+    background-size: cover;
+    margin: -97.5px 0 0 -450px;
 }
 
 

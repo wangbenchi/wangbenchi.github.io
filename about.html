@@ -1,271 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE HTML>
-<html>
 <head>
-<title>About</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- start top_js_button -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-   <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-</head>
-<body>
-<!-- start header -->
-<div class="header_bg">
-<div class="wrap">
-	<div class="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""/> </a>
-		</div>
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
-<!-- start header -->
-<div class="header_btm">
-<div class="wrap">
-	<div class="header_sub">
-		<div class="h_menu">
-			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About us</a></li>
-				<li><a href="people.html">People</a></li>
-				<li><a href="publications.html">Publications</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact us</a></li>
-			</ul>
-		</div>
-		<div class="h_search">
-    		<form>
-    			<input type="text" value="" placeholder="search something...">
-    			<input type="submit" value="">
-    		</form>
-		</div>
-        <div class="menu">
-        	<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About us</a></li>
-				<li><a href="people.html">People</a></li>
-				<li><a href="publications.html">Publications</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="search">
-            <form action="/iphone/search.html">
-                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
-            </form>
-        </div>
-        <div class="sub-head">
-        	<ul>
-            	<li><a href="#" id="menu">Menu  <span></span></a></li>
-            	<li><a href="#" id="search">Search <span></span></a></li>
-            </ul>
-            <div class="clear"></div>
-        </div>
-	   <script type="text/javascript">
-		$(".menu,.search").hide();
-		$("#menu").click(function(){
-			$(".menu").toggle();
-			$(".search").hide();
-			$("#search").removeClass("active");
-			$("#menu").toggleClass("active");
-		});
-		$("#search").click(function(){
-			$(".search").toggle();
-			$(".menu").hide();
-			$("#menu").removeClass("active");
-			$("#search").toggleClass("active");
-			$(".text").focus();
-		});
-	</script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<div class="clear"></div>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<div class="clear"></div>
-</div>
-</div>
-</div>
+    <!-- PAGE TITLE -->
+    <title>Home</title>
+
+    <!-- ===================================
+        FAVICON ICON
+    ==================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- ===================================
+        NORMALIZE CSS
+    ==================================== -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- ===================================
+        BOOTSTRAP 
+    ==================================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ===================================
+        GOOGLE FONTS
+    ==================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' rel='stylesheet' type='text/css'>
+
+    <!-- ===================================
+        FONTS ICON
+    ==================================== -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
+    <!-- ===================================
+        PLUGIN
+    ==================================== -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slider-pro.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ===================================
+        MAIN STYLESHEET
+    ==================================== -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/color.css" id="colors" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+        <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+</head>
+
 <style>
-	/* 设置所有<div>元素的内边距为10px */
-	div {
-  		padding: 20px;
-	}
-	/* 设置class为blurb的<div>元素的上、右、下、左内边距分别为5px、10px、15px、20px */
-	div.blurb {
-  		padding: 5px 10px 15px 20px;
-	}
-	/* 设置所有图片的外边距为10px */
-	img {
-  		margin: 10px;
-	}
-	/* 设置第一张图片的上、右、下、左外边距分别为5px、10px、15px、20px */
-	img:first-child {
-  		margin: 5px 40px 15px 40px;
-	}
-	/* 设置第二张图片的上、下外边距为10px，左、右外边距为20px */
-	img:last-child {
-  		margin: 10px 20px;
-	}
+    p{
+        font-size: large;
+        text-align: left;
+    }
 </style>
 
+<body>
+    <!-- ===================================
+        PRELOADER
+    ==================================== -->
+    <div class="preloader">
+        <div class="status"></div>
+    </div>
 
-<div class="blurb" style = "height:600px;width:1000px">
-	<h1 style = "font-size: 30px">Welcome to our lab!</h1> <br>
-		<p style = "font-size: 1.2em">
-		<br>
-		Our lab, <i>led by Benchi Wang</i>, mainly focus on the research regarding a wide array of subjects
-		within the field of attention and memory. To explore these interesting research, we adopt a wide
-		range of methods, including behavioral testing, eye-tracking, EEG-recording, functional MRI, and modeling.<br>
-		<br>
-		For more information on the topics we investigate, please refer to our research page and recent publications.
-		</p>
-	<p><br></p>
-	<img border="0" src="/images/Att.png" alt="Attention" width="450" height="300">
-	<img border="0" src="/images/Wor.png" alt="Memory" width="450" height="300">
-</div><!-- /.blurb -->
+    <!-- ===================================
+        HEADER
+    ==================================== -->
+    <header>
+        <!-- Navigation Menu start-->
+        <nav class="navbar clean-main-menu" role="navigation">
+            <div class="container">
 
-<div class="footer" style = "clear:both;text-align:right;">
-	<footer>
-		<ul>
-		<li><a href="mailto:wangbenchi.swift@gmail.com">Contact</a></li>
-		<li><a href="https://github.com/wangbenchi">Lab resources</a></li>
-		</ul>
-	</footer>
-</div>
+                <!-- Navbar Toggle -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-<!-- start top_bg -->
-<!--<div class="top_bg">-->
-<!--<div class="wrap">-->
-<!--	<div class="top">-->
-<!--		<h2>about us</h2>-->
-<!-- 	</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--&lt;!&ndash; start main &ndash;&gt;-->
-<!--<div class="wrap">-->
-<!--<div class="main">-->
-<!--		<div class="about">-->
-<!--	       <div class="cont-grid">-->
-<!--	       <div class="abt-para">-->
-<!--	       	<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>-->
-<!--	       	<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry., Lorem Ipsum  dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit esse when an,Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s, </p>-->
-<!--	       	<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>-->
-<!--			<div class="read_more">-->
-<!--				 <a class="btn" href="details.html">read more</a>-->
-<!--			</div>-->
-<!--	       	</div>-->
-<!--	      	 <div class="clear"></div>-->
-<!--	      	</div>-->
-<!--			 <div class="cont-grid-img img_style">-->
-<!--	     		<a href="details.html"><img src="images/about_pic.jpg" alt=""></a>-->
-<!--	     	</div>	      	-->
-<!--	      	<div class="clear"></div>-->
-<!--	    	<div class="about-p">-->
-<!--		    	<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry., Lorem Ipsum  dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit esse when an,Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s, </p>-->
-<!--				<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit</p>-->
-<!--				<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>-->
-<!--				<div class="read_more">-->
-<!--					<a class="btn" href="details.html">read more</a>-->
-<!--				</div>-->
-<!--		</div>-->
-<!--		</div>-->
-<!--		<div class="clear"></div>-->
-<!--	</div>-->
-<!--</div>-->
-<!-- start footer -->
-<!--<div class="footer_bg">-->
-<!--<div class="wrap">-->
-<!--	<div class="footer">-->
-<!--		&lt;!&ndash; start span_of_4 &ndash;&gt;-->
-<!--		<div class="span_of_4">-->
-<!--			<div class="span1_of_4">-->
-<!--				<h4>popular post</h4>-->
-<!--				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
-<!--				<ul class="f_nav1">-->
-<!--					<li class="timer"><a href="#">25-september 2013 </a></li>-->
-<!--				</ul>-->
-<!--				<p class="top">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
-<!--				<ul class="f_nav1">-->
-<!--					<li class="timer"><a href="#">25-september 2013 </a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--			<div class="span1_of_4">-->
-<!--				<h4>tags</h4>-->
-<!--				<p>It is a long established fact that a reader will be distracted by the<big>readable</big> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal <big>blog</big> Many desktop publishing packages and web page editors now use Lorem.</p>-->
-<!--			</div>-->
-<!--			<div class="span1_of_4">-->
-<!--				<h4>a little about us</h4>-->
-<!--				<p class="btm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>-->
-<!--				<p>It is a long established fact that a reader will be of a page when looking at its layout.</p>-->
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html"><img class="logo" id="logo" src="images/logo.png"
+                            alt="Page"></a>
 
-<!--			</div>-->
-<!--			<div class="span1_of_4">-->
-<!--				<h4>get in touch</h4>-->
-<!--				<p class="btm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>-->
-<!--				<p class="btm1 pin">Texas, US</p>-->
-<!--				<p class="btm1 mail"><a href="mailto:info@mycompany.com">info(at)mycompany.com </a></p>-->
-<!--				<p class="call">01234 444 777</p>-->
-<!--			</div>-->
-<!--			<div class="clear"></div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
-<!--</div>-->
-<!-- start footer -->
-<!--<div class="footer_bg1">-->
-<!--<div class="wrap">-->
-<!--	<div class="footer1">-->
-<!--		&lt;!&ndash; scroll_top_btn &ndash;&gt;-->
-<!--	    <script type="text/javascript">-->
-<!--			$(document).ready(function() {-->
-<!--			-->
-<!--				var defaults = {-->
-<!--		  			containerID: 'toTop', // fading element id-->
-<!--					containerHoverID: 'toTopHover', // fading element hover id-->
-<!--					scrollSpeed: 1200,-->
-<!--					easingType: 'linear' -->
-<!--		 		};-->
-<!--				-->
-<!--				-->
-<!--				$().UItoTop({ easingType: 'easeOutQuart' });-->
-<!--				-->
-<!--			});-->
-<!--		</script>-->
-<!--		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>-->
-<!--		&lt;!&ndash;end scroll_top_btn &ndash;&gt;-->
-<!--		<div class="social-icons">-->
-<!--		    <ul>-->
-<!--		      <li><a href="#" target="_blank"></a></li>-->
-<!--			  <li><a href="#" target="_blank"></a></li>-->
-<!--		      <li><a href="#" target="_blank"></a></li>-->
-<!--			  <li><a href="#" target="_blank"></a></li>-->
-<!--			</ul>-->
-<!--		</div>-->
-<!--|-->
-<!--		<div class="clear"></div>-->
-<!--	</div>-->
-<!--</div>-->
-<!--</div>-->
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+                </div>
+                <!-- Navbar Toggle End -->
+
+                <!-- navbar-collapse start-->
+                <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
+                    <ul class="nav navbar-nav clean-menu-wrapper">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="people.html">People</a>
+                        </li>
+                        <li>
+                            <a href="publication.html">Publications</a>
+                        </li>
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse end-->
+
+            </div>
+        </nav>
+        <!-- Navigation Menu end-->
+    </header>
+
+    <!-- ===================================
+        ABOUT SECTION
+    ==================================== -->
+
+    <section class="clean-custom-sec clean-section-wrapper" style="padding-top: 160px">
+        <div class="container">
+            <!-- IMAGE -->
+            <div class="row" style="display: flex;">
+                <div style="flex: 1;">
+                    <img src="images/slider/1.png" style="width: 100%; height: auto;">
+                </div>
+                <div style="flex: 1;">
+                    <img src="images/slider/2.png" style="width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <!-- TEXT -->
+            <div class="row" style="text-align: left;">
+                <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header">
+                    <h1><span class="clean-color-contras">ABOUT AMLAB</span></h1>
+                    <div class="clean-line"></div>
+                    <br>
+                    <br>
+                    <p>
+                        Our lab, led by Dr. Benchi Wang, who earned his PhD in 2019 in Amsterdam and is currently a
+                        tenured associate professor at South China Normal University, is well-supported by multiple
+                        national grants, providing ample resources for research within our designated topics.
+                        Our diverse team consists of members who share a keen interest in cognition and its neural
+                        mechanisms. They are not only friendly but also enthusiastic about engaging in discussions on
+                        any related questions.</p>
+                    <br>
+                    <br>
+                    <p style="font-weight: bold;">
+                        Research Interests:
+                    </p>
+                    <p style="font-weight: bold;">
+                        I)Attentional Selection
+                    </p>
+                    <p>
+                        In our daily lives, we navigate a visually complex world filled with a wealth of perceptual information. Recognising our inability to process all this information simultaneously, we must selectively direct our limited cognitive resources toward a subset of relevant items closely tied to our current behavior—referred to as attentional selection.
+                    </p>
+                    <p>
+                        Attentional selection can be conceptualized as being controlled in three main ways (Awh, Belopolsky, & Theeuwes, 2012; Theeuwes, 2018, 2019): top-down control, bottom-up control, and selection history. For instance, consider the scenario of working in an office on a science paper. Goal-driven selection involves top-down control, while a distraction like someone knocking on the door represents stimulus-driven selection with bottom-up control. If a colleague persistently knocks on the door for amusement, your ability to suppress the distraction and refocus on your work involves history-driven selection, shaped by previous selection episodes. 
+                    </p>
+                    <p>
+                        Our primary interest lies in understanding how these factors interact to shape the selection priority map, influencing current selection processes.
+                    </p>
+                    <br>
+                    <p style="font-weight: bold;">
+                        II) Memory
+                    </p>
+                    <p>
+                        Working memory (WM) is commonly viewed as an online memory system that not only provides temporary storage but also manipulates information essential for ongoing complex cognitive tasks, such as learning and reasoning. Traditionally, WM's storage capacity has been considered limited, accommodating around ~4 items at a time.
+                    </p>
+                    <p>
+                        Given the crucial role of this memory system in various cognitive tasks, our research aims to unravel how it operates, explore methods to enhance its capacity, investigate ways to manipulate memory representations, and examine its relationship with our long-term memory system.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===================================
+        FOOTER SECTION
+    ==================================== -->
+    <footer class="background-two">
+        <div class="container">
+            <div class="row">
+                <div class="clean-footer-content">
+
+                    <div class="clean-footer-logo wow bounceIn" data-wow-offset="0">
+                        <a href="index.html">
+                            <img id="logo-footer" src="images/logo.png" alt="clean">
+                        </a>
+                    </div>
+
+                    <p class="clean-copyright-info">Copyright &copy; 2023 AMLAB
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ===================================
+        SCRIPTS
+    ==================================== -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
