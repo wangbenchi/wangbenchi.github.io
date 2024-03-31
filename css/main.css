@@ -7,7 +7,7 @@
 	PRELOADER
 ====================================== */
 :root {
-	--theme-color--: #225580;
+	--theme-color--: #414141;
 	--theme-color-rgb--: 34, 85, 128;  /* 这是#225580的RGB值 */
 }
 
@@ -411,11 +411,11 @@ a:active{
 }
 
 section {
-	background: url(../images/top.png) bottom center no-repeat,
-	url(../images/bottom.png) top center no-repeat;
+	background: url(../images/top_1.png) bottom center no-repeat,
+	url(../images/bottom_1.png) top center no-repeat;
 	background-size: 60px; 
-	border-bottom: 3px solid #336699;
-	border-top: 3px solid #336699;
+	border-bottom: 3px solid #313131;
+	border-top: 3px solid #313131;
 }
 
 /* ===================================
@@ -485,7 +485,7 @@ section {
 	MENUS
 ====================================== */
 .clean-main-menu{
-    background-color: rgba(var(--theme-color-rgb--), 1); /* 0.5表示50%的透明度 */
+    background-color: var(--theme-color--); /* 0.5表示50%的透明度 */
     border: 0 none;
     border-radius: 0;
     position: fixed;
