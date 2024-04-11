@@ -17,7 +17,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fefefe;
+    background-color: var(--theme-color--);
     z-index: 99999;
     height: 100%;
     width: 100%;
@@ -94,7 +94,7 @@ header.clean-page-header{
 }
 
 .background-two {
-	background-color: #f1f1f1;
+	background-color: var(--theme-color--);
 }
 
 
@@ -1054,7 +1054,7 @@ header.clean-page-header .clean-main-menu.minified{
 ====================================== */
 footer{
 	background-color: #28292e;
-	padding: 60px;
+	padding: 10px;
 	overflow: hidden;
 }
 
@@ -1065,6 +1065,7 @@ footer .clean-footer-content{
 footer .clean-footer-logo{
 	text-align: center;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 footer p{
