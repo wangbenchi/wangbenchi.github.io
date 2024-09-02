@@ -500,6 +500,21 @@ section {
             transition: all .35s;
 }
 
+.navbar-header,
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-header {
+    flex: 1;
+}
+
+.navbar-collapse {
+    flex: 2;
+    justify-content: flex-end;
+}
+
 header.clean-page-header .clean-main-menu{
 	position: relative;
 }
@@ -515,7 +530,7 @@ header.clean-page-header .clean-main-menu{
 
 .clean-main-menu .navbar-nav li a{
 	color: #fff;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 0;
