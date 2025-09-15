@@ -59,6 +59,21 @@
 		<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
         <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<![endif]-->
+    <!-- <link rel="prefetch" href="about.html">
+    <link rel="prefetch" href="people.html">
+    <link rel="prefetch" href="publication.html">
+    <link rel="prefetch" href="news.html">
+    <link rel="prefetch" href="contact.html"> -->
+
+
+    <!-- 在 <head> 中加入这些 -->
+    <!-- <link rel="prerender" href="about.html">
+    <link rel="prerender" href="people.html">
+    <link rel="prerender" href="publication.html">
+    <link rel="prerender" href="news.html">
+    <link rel="prerender" href="contact.html"> -->
+
+
 </head>
 
 <body>
@@ -94,7 +109,7 @@
 
                 <!-- navbar-collapse start-->
                 <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
-                    <ul class="nav navbar-nav clean-menu-wrapper">
+                    <!-- <ul class="nav navbar-nav clean-menu-wrapper">
                         <li class="active">
                             <a href="">Home</a>
                         </li>
@@ -113,7 +128,16 @@
                         <li>
                             <a href="contact.html">Contact Us</a>
                         </li>
-                    </ul>
+                    </ul> -->
+                    <ul class="nav navbar-nav clean-menu-wrapper">
+						<li class="active"><a href="index.html" class="ajax-link">Home</a></li>
+						<li><a href="about.html" class="ajax-link">About us</a></li>
+						<li><a href="people.html" class="ajax-link">People</a></li>
+						<li><a href="publication.html" class="ajax-link">Publications</a></li>
+						<li><a href="news.html" class="ajax-link">News</a></li>
+						<li><a href="contact.html" class="ajax-link">Contact Us</a></li>
+					</ul>
+
                 </div>
                 <!-- navbar-collapse end-->
 
@@ -123,6 +147,67 @@
     </header>
 
 
+    
+
+
+    <!-- ===================================
+        ABOUT SECTION
+    ==================================== -->
+    <section id="about" class="clean-section-wrapper background-one">
+        <div class="container" style="width: 90%; max-height: 400px;">
+            <div class="row" style="display: flex;">
+                <!-- 文字部分 -->
+                <div class="row" style="flex: 3; text-align: left; position: relative; top: -20px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow"  style="font-size: 18px;">
+                        <h1><span class="clean-color-contras">About AMLAB</span></h1>
+                        <div class="clean-line"></div>
+                        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="text-align: left;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our lab investigates how salience and learning shape human cognition, 
+                            with a particular focus on attention and memory. We propose that memory operates as a single integrated system, 
+                            dynamically flexing between short-term and long-term demands. We study how different forms of learning—including 
+                            perceptual, statistical, sequence, associative, and automatic learning—reshape neural activity and reorganize 
+                            cognitive processes over time. Extending beyond observation, we also explore brain stimulation and brain–machine 
+                            interfaces, using both human and cross-species approaches to test causal mechanisms and translate discoveries into applications.
+                        </p>
+                           <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="text-align: left;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employing a diverse array of techniques—including eye-tracking, scalp and intracranial EEG, 
+                            fMRI, and computational modeling—we aim to uncover the fundamental principles that govern cognition and their translational 
+                            potential. As an open and collaborative team, we welcome partnerships across disciplines and across the globe.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- 图片部分 -->
+                <!-- <div style="flex: 1.1;">
+                    <img src="images/folder/about.png" style="width: 130%; height: auto;">
+                </div> -->
+                <!-- 图片部分 -->
+               <div style="flex: 1.20; display: flex; justify-content: center; align-items: center;">
+                    <img src="images/folder/about.png" 
+                      style="width: auto; height: 100%; object-fit: contain; position: relative; top: -58px;">
+               </div>
+
+                <!-- <div style="flex: 1; position: relative;">
+                   <img src="images/folder/about.png" 
+                       style="position: absolute; top: 0; left: 0; width: auto; height: 100%; object-fit: contain;">
+               </div> -->
+               <!-- <div style="flex: 1; overflow: visible;">
+                <img src="images/folder/about.png" 
+                   style="width: auto; height: 120%; margin-top: -10%; object-fit: contain;">
+               </div> -->
+                <!-- <div style="flex: 1;">
+                    <img src="images/folder/NeuroImage.gif" style="width: 75%; height: auto;">
+                </div>
+                <div style="flex: 1;">
+                    <img src="images/folder/xhp.gif" style="width: 75%; height: auto;">
+                </div>
+                <div style="flex: 1;">
+                    <img src="images/folder/1.webp" style="width: 75%; height: auto;">
+                </div> -->
+            </div>
+        </div>
+        
+    </section>
     <!-- ===================================
         MAIN SLIDER
     ==================================== -->
@@ -151,43 +236,7 @@
                 </h1>
             </div>
             <!-- Slides End -->
-
         </div>
-    </section>
-
-
-    <!-- ===================================
-        ABOUT SECTION
-    ==================================== -->
-    <section id="about" class="clean-section-wrapper background-one">
-        <div class="container" style="width: 80%;">
-            <div class="row" style="display: flex;">
-                <!-- 文字部分 -->
-                <div class="row" style="flex: 3; text-align: left;">
-                    <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow">
-                        <h1><span class="clean-color-contras">About AMLAB</span></h1>
-                        <div class="clean-line"></div>
-                        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" style="text-align: left;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our lab focuses primarily on the intricate domains of human attention, memory, learning, and language. Employing a diverse array of cognitive and neural techniques, including but not limited to eye-tracking, scalp and intracranial EEG, fMRI, and modeling, we delve into various facets of these topics. Our overarching goal is to unveil the fundamental mechanisms that underpin basic cognitive abilities. As an open and collaborative team, we enthusiastically welcome partnerships and collaborations from around the world.
-                        </p>
-                    </div>
-                </div>
-                <!-- 图片部分 -->
-                <div style="flex: 1;">
-                    <img src="images/folder/APP.webp" style="width: 75%; height: auto;">
-                </div>
-                <div style="flex: 1;">
-                    <img src="images/folder/NeuroImage.gif" style="width: 75%; height: auto;">
-                </div>
-                <div style="flex: 1;">
-                    <img src="images/folder/xhp.gif" style="width: 75%; height: auto;">
-                </div>
-                <div style="flex: 1;">
-                    <img src="images/folder/1.webp" style="width: 75%; height: auto;">
-                </div>
-            </div>
-        </div>
-        
     </section>
 
 

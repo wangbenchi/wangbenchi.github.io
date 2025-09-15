@@ -1,3 +1,35 @@
 img {
     height: 30px;
 }
+
+/* 针对 slider 的样式 */
+#clean-slider {
+    height: 80%;          /* 或者使用 px，比如 height: 350px; */
+    max-height: 400px;    /* 控制最大高度 */
+    overflow: hidden;     /* 避免图片超出 */
+}
+#clean-slider .sp-image {
+    height: 100%;
+    width: auto;           /* 保持宽高比 */
+    position: relative;
+    top: -150px;             /* 向上移动图片，裁剪顶部 */
+}
+#about {
+    margin-top: 120px;
+}
+/* 固定 header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+/* 缩小 navbar 高度 */
+.navbar {
+    min-height: 20px;       /* 默认是 50px，可以改小 */
+    padding-top: 1px;       /* 上下内边距 */
+    padding-bottom: 1px;
+}
+
+
