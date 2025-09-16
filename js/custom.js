@@ -36,11 +36,11 @@ jQuery(document).ready(function() {
 	/* ===================================
 		ONE PAGE NAV
 	====================================== */
-	$('#nav-menu').onePageNav({
-	    currentClass: 'active',
-	    scrollSpeed: 500,
-	    easing: 'linear'
-	});
+	// $('#nav-menu').onePageNav({
+	//     currentClass: 'active',
+	//     scrollSpeed: 500,
+	//     easing: 'linear'
+	// });
 
 	/* ===================================
 		WOW JS
