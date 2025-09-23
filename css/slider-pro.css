@@ -26,10 +26,12 @@
 	position: relative;
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
+	
 }
 
 .sp-slide {
 	position: absolute;
+	background-color: #ffffff; /* 这里改成你想要的颜色 */
 }
 
 .sp-image-container {
@@ -476,7 +478,7 @@
 	position: absolute;
 	width: 50%;
 	height: 50%;
-	background-color: #FFF;
+	background-color: #5a5a5a;
 }
 
 .sp-previous-arrow:before {

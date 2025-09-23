@@ -14,7 +14,7 @@
 	HIGHLIGHT
 ====================================== */
 span.clean-color-contras{
-	color: #33302d;
+	color: #4e4e4e;
 }
 
 /* ===================================
@@ -108,9 +108,12 @@ span.clean-color-contras{
 
 .clean-main-menu .navbar-nav li a:hover,
 .clean-main-menu .navbar-nav li.active a{
-    color: #FFCC33;
+    color: #3982e2;;
 }
-
+.clean-main-menu .navbar-nav li a {
+    color: #383838; /* 导航栏字体颜色*/
+    transition: color 0.3s; /* 鼠标悬停平滑过渡 */	
+}
 .clean-slider .sp-selected-button {
   	background-color: #336699;
 }
