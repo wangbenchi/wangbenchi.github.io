@@ -13,12 +13,13 @@ section img {
 }
 
 .student {
-    width: 180px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     display: block;
     margin: auto;
     transform: scale(1);
     transition: all 0.5s;
+    object-fit: cover;
 }
 
 .student:hover{
