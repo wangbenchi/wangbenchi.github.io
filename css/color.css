@@ -72,7 +72,7 @@ span.clean-color-contras{
 }
 
 .clean-icones .clean-icon i {
-	color: #dadada;
+	color: #AE5C8C;
 }
 
 .clean-blurb-round-icon:hover h3{
@@ -97,22 +97,26 @@ span.clean-color-contras{
 .clean-icones .clean-icon:hover {
 	background-color: #33302d;
 	border: none;
-	color: #fff;
+	color: #AE5C8C;
 }
 
 .clean-icones .clean-icon:hover i{
 	background-color: #33302d;
 	border: none;
-	color: #fff;
+	color: #AE5C8C;
 }
 
 .clean-main-menu .navbar-nav li a:hover,
 .clean-main-menu .navbar-nav li.active a{
-    color: #3982e2;
+    color: #383838;
 }
 .clean-main-menu .navbar-nav li a {
-    color: #383838; /* 导航栏字体颜色*/
+    color: #dadada; /* 导航栏字体颜色*/
     transition: color 0.3s; /* 鼠标悬停平滑过渡 */	
+}
+
+.clean-main-menu {
+    background-color: #AE5C8C; /* 例如，设置一个浅灰色背景 */
 }
 
 .clean-slider .sp-selected-button {
@@ -128,7 +132,7 @@ span.clean-color-contras{
 }
 
 .clean-counter-item h3:after {
-	background-color: #fff;
+	background-color: #AE5C8C;
 }
 
 /* ===================================

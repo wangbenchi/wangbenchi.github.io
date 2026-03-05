@@ -6,9 +6,102 @@
 /* ===================================
 	PRELOADER
 ====================================== */
+
+
+
 :root {
 	--theme-color--: #ffffff;
 	--theme-color-rgb--: 34, 85, 128;  /* 这是#225580的RGB值 */
+}
+
+/* 父容器需要设置为相对定位，作为子元素的参考点 */
+.header-image {
+    position: relative;
+    width: 100%;
+    /* 如果你之前设置了高度，保留它；如果没有，图片会自动撑开高度 */
+}
+
+
+/* 文字容器的样式 */
+.overlay-text {
+    position: absolute;
+    /* 距离左边的距离，可以根据需要调整 */
+    left: 28%;
+    /* 距离顶部的距离，可以根据需要调整 */
+    top: 60%;
+    /* 让文字垂直居中 */
+    transform: translateY(-50%);
+    /* 文字颜色设为白色 */
+    color: white;
+    /* 文字居中对齐 */
+    text-align: center;
+    /* 可选：给文字加一点阴影，让它在复杂的背景图上更清晰 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    /* 可选：设置最大宽度，防止文字太宽 */
+    max-width: 80%;
+}
+
+/* 标题样式 */
+.overlay-text h1 {
+    font-size: 3.5em; /* 字号 */
+    margin: 0; /* 去除默认的上下边距 */
+    font-weight: bold;
+}
+
+/* 副标题样式 */
+.overlay-text p {
+    font-size: 2em;
+    margin: 10px 0 0 0; /* 上边距10px，其他为0 */
+    border-top: 1px solid rgba(255,255,255,0.5); /* 上边框线 */
+    padding-top: 10px; /* 边框线和文字的间距 */
+	text-align: left
+}
+
+
+/* for logo */
+header {
+    position: relative; 
+    /* 如果 header 本身没有高度，可能需要设置 min-height 或者确保子元素撑开它 */
+}
+/* 2. Logo 悬浮层的样式 */
+.logo-overlay {
+    position: absolute;
+    /* 定位在距离左边 50px 的位置（根据你的设计调整） */
+    left: 248px; 
+    /* 【关键】定位在距离顶部 100px 的位置 */
+    /* 这个数值需要根据你的导航栏高度来调整 */
+    /* 假设导航栏高度是 80px，你想让 Logo 一半在导航栏，一半在图片上 */
+    /* 那么 top 值应该是 (导航栏高度 - Logo高度/2) */
+    /* 例如：导航栏高 80px，Logo 高 100px，那么 top = 80 - 50 = 30px */
+    top: 0px; 
+    
+    /* 确保它在最上层 */
+    z-index: 1001; 
+    
+}
+
+/* for moving the navi */
+
+.clean-main-menu .container {
+    padding-left: 0px; /* 增加左侧内边距，整体内容向右移动 */
+    padding-right: 0px; /* 增加右侧内边距 */
+    /* 或者直接设置新的宽度 */
+    /* max-width: 1200px; */
+	margin-left: 460px;
+	margin-right: 0px;
+	
+}
+
+.clean-main-menu .navbar-nav.clean-menu-wrapper > li {
+    margin-left: 20px; /* 向左的外边距 */
+    margin-right: 20px; /* 向右的外边距 */
+}
+
+/* 3. 调整 Logo 图片大小 */
+.logo-overlay img {
+    height: 250px; /* 根据你的实际 Logo 大小调整 */
+    width: auto;
+    display: block;
 }
 
 .preloader {
@@ -44,6 +137,13 @@
 ====================================== */
 body {
   position: relative;
+  background-image: url('images/feature/background_big.png'); /* 你的背景图片路径 */
+  background-position: bottom center;     /* 背景图位于底部 */
+  background-repeat: no-repeat;           /* 不重复 */
+  background-size: cover;                 /* 或 contain，按需选择 */
+  min-height: 100vh;                      /* 确保 body 至少占满整个视口 */
+  margin: 0;                              /* 移除默认边距 */
+
 }
 
 html{
@@ -484,8 +584,9 @@ section {
 /* ===================================
 	MENUS
 ====================================== */
+
 .clean-main-menu{
-    background-color: var(--theme-color--); /* 0.5表示50%的透明度 */
+    background-color: #9b59b6; /* 0.5表示50%的透明度 */
     border: 0 none;
     border-radius: 0;
     position: fixed;
@@ -500,7 +601,7 @@ section {
         -ms-transition: all .35s;
          -o-transition: all .35s;
             transition: all .35s;
-	border-bottom: 1px solid #cccccc; /* 灰色分界线 */
+	border-bottom: none; /* 灰色分界线 */
 }
 
 header.clean-page-header .clean-main-menu{
@@ -518,7 +619,7 @@ header.clean-page-header .clean-main-menu{
 
 .clean-main-menu .navbar-nav li a{
 	color: #fff;
-    font-size: 20px !important;
+    font-size: 25px !important;
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 0;
@@ -539,6 +640,8 @@ header.clean-page-header .clean-main-menu{
 .clean-main-menu .navbar-nav li a:focus{
 	background-color: transparent;
 }
+
+
 
 /* Minified Menu */
 .clean-main-menu.minified{
@@ -1028,7 +1131,6 @@ header.clean-page-header .clean-main-menu.minified{
 	color: #ffffff;
 	background-color: #de5c39;
 }
-
 
 /* ===================================
 	OWL PAGINATIONS
