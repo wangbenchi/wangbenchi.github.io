@@ -4,7 +4,7 @@ img {
 
 /* 针对 slider 的样式 */
 #clean-slider {
-    height: 255px;          /* 或者使用 px，比如 height: 350px; */
+    height: 250px;          /* 或者使用 px，比如 height: 350px; */
     max-height: 400px;    /* 控制最大高度 */
     overflow: hidden;     /* 避免图片超出 */
 }
