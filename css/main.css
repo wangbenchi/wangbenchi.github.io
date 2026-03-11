@@ -36,24 +36,24 @@
     /* 文字居中对齐 */
     text-align: center;
     /* 可选：给文字加一点阴影，让它在复杂的背景图上更清晰 */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0.104vw 0.104vw 0.208vw rgba(0,0,0,0.5);
     /* 可选：设置最大宽度，防止文字太宽 */
     max-width: 80%;
 }
 
 /* 标题样式 */
 .overlay-text h1 {
-    font-size: 3.5em; /* 字号 */
+    font-size: 2vw; /* 字号 */
     margin: 0; /* 去除默认的上下边距 */
     font-weight: bold;
 }
 
 /* 副标题样式 */
 .overlay-text p {
-    font-size: 2em;
-    margin: 10px 0 0 0; /* 上边距10px，其他为0 */
-    border-top: 1px solid rgba(255,255,255,0.5); /* 上边框线 */
-    padding-top: 10px; /* 边框线和文字的间距 */
+    font-size: 1.5vw;
+    margin: 0.520vw 0 0 0; /* 上边距0.520vw，其他为0 */
+    border-top: 0.0520vw solid rgba(255,255,255,0.5); /* 上边框线 */
+    padding-top: 0.520vw; /* 边框线和文字的间距 */
 	text-align: left
 }
 
@@ -66,14 +66,14 @@ header {
 /* 2. Logo 悬浮层的样式 */
 .logo-overlay {
     position: absolute;
-    /* 定位在距离左边 50px 的位置（根据你的设计调整） */
-    left: 248px; 
-    /* 【关键】定位在距离顶部 100px 的位置 */
+    /* 定位在距离左边 2.604vw 的位置（根据你的设计调整） */
+    left: 9vw; 
+    /* 【关键】定位在距离顶部 5.20vw 的位置 */
     /* 这个数值需要根据你的导航栏高度来调整 */
     /* 假设导航栏高度是 80px，你想让 Logo 一半在导航栏，一半在图片上 */
     /* 那么 top 值应该是 (导航栏高度 - Logo高度/2) */
-    /* 例如：导航栏高 80px，Logo 高 100px，那么 top = 80 - 50 = 30px */
-    top: 0px; 
+    /* 例如：导航栏高 80px，Logo 高 100px，那么 top = 80 - 50 = 1.5625vw */
+    top: 0; 
     
     /* 确保它在最上层 */
     z-index: 1001; 
@@ -82,24 +82,59 @@ header {
 
 /* for moving the navi */
 
-.clean-main-menu .container {
-    padding-left: 0px; /* 增加左侧内边距，整体内容向右移动 */
-    padding-right: 0px; /* 增加右侧内边距 */
-    /* 或者直接设置新的宽度 */
-    /* max-width: 1200px; */
-	margin-left: 460px;
-	margin-right: 0px;
-	
+.clean-main-menu {
+    position: fixed;      /* 固定在视口顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3vw;
 }
 
-.clean-main-menu .navbar-nav.clean-menu-wrapper > li {
-    margin-left: 20px; /* 向左的外边距 */
-    margin-right: 20px; /* 向右的外边距 */
+.clean-main-menu .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.clean-main-menu .navbar-nav.navbar-collapse {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.clean-main-menu .navbar-nav.clean-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 水平居中（核心） */
+    align-items: center;     /* 垂直居中 */
+    gap: 1vw;                /* 菜单项间距（视口比例，缩放自适应） */
+    padding: 1.5vw 0;        /* 上下内边距 */
+    width: 100%;             /* 占满父容器宽度 */
+    list-style: none;        /* 清除列表默认样式（如果有） */
+    margin: 0; 
+	overflow: hidden;
+}
+
+.clean-main-menu .navbar-nav li a{
+	color: #fff;
+    font-size: 1.3vw !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1.5625vw !important;
+    -webkit-transition: all .3s;
+       -moz-transition: all .3s;
+        -ms-transition: all .3s;
+         -o-transition: all .3s;
+            transition: all .3s;
 }
 
 /* 3. 调整 Logo 图片大小 */
 .logo-overlay img {
-    height: 250px; /* 根据你的实际 Logo 大小调整 */
+    height: 16vw; /* 根据你的实际 Logo 大小调整 */
     width: auto;
     display: block;
 }
@@ -118,8 +153,8 @@ header {
 }
 
 .status {
-    width: 900px;
-    height: 195px;
+    width: 46.8vw;
+    height: 190.260vw;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -128,7 +163,7 @@ header {
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
-    margin: -97.5px 0 0 -450px;
+    margin: -97.0.260vw 0 0 -23.4vw;
 }
 
 
@@ -149,7 +184,7 @@ body {
 html{
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-shadow: 0.0520vw 0.0520vw 0.0520vw rgba(0,0,0,0.004);
 }
 
 textarea:focus,
@@ -169,7 +204,7 @@ ul{
 
 header.clean-page-header{
 	-webkit-background-size: cover;
-	height: 330px;
+	height: 17.18vw;
 	background-size: cover;
 	position: relative;
 }
@@ -206,34 +241,34 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 700;
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0.78125vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-shadow: 0.0520vw 0.0520vw 0.0520vw rgba(0,0,0,0.004);
 }
 
 h1{
-	font-size: 36px;
+	font-size: 1.875vw;
 }
 
 h2{
-	font-size: 30px;
+	font-size: 1.5625vw;
 }
 
 h3{
-	font-size: 24px;
+	font-size: 1.25vw;
 }
 
 h4{
-	font-size: 18px;
+	font-size: 0.9375vw;
 }
 
 h5{
-	font-size: 16px;
+	font-size: 0.833vw;
 }
 
 h5{
-	font-size: 14px;
+	font-size: 0.729vw;
 }
 
 a,p,li,input,textarea{
@@ -243,7 +278,7 @@ a,p,li,input,textarea{
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-shadow: 0.0520vw 0.0520vw 0.0520vw rgba(0,0,0,0.004);
 }
 
 a{
@@ -263,11 +298,11 @@ a:active{
 }
 
 .clean-page-title h1{
-	font-size: 36px;
+	font-size: 1.875vw;
 	font-weight: 700;
 	color: #ffffff;
 	margin: 0;
-	padding: 70px 0 0;
+	padding: 3.645vw 0 0;
 	text-align: center;
 }
 
@@ -277,11 +312,11 @@ a:active{
 ====================================== */
 .clean-button-solid{
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-weight: 700;
 	color: #ffffff;
 	text-align: center;
-	padding: 15px 30px;
+	padding: 0.78125vw 1.5625vw;
 	display: inline-block;
 	-webkit-transition: all .35s;
 	   -moz-transition: all .35s;
@@ -297,11 +332,11 @@ a:active{
 
 .clean-button-outline{
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-weight: 700;
 	color: #ffffff;
 	text-align: center;
-	padding: 15px 30px;
+	padding: 0.78125vw 1.5625vw;
 	display: inline-block;
 	background-color: transparent;
 	-webkit-transition: all .35s;
@@ -312,36 +347,36 @@ a:active{
 }
 
 .clean-button-outline-light{
-	border: 1px solid #ffffff;
+	border: 0.0520vw solid #ffffff;
 }
 
 .clean-button-outline-light:hover{
 	color: #ffffff;
-	border: 1px solid transparent;
+	border: 0.0520vw solid transparent;
 }
 
 .clean-button-outline-dark{
 	color: #28292e;
-	border: 1px solid #28292e;
+	border: 0.0520vw solid #28292e;
 }
 
 .clean-button-outline-dark:hover{
 	color: #ffffff;
-	border: 1px solid transparent;
+	border: 0.0520vw solid transparent;
 }
 
 .clean-btn-round{
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-weight: 700;
-	padding: 15px 30px;
+	padding: 0.78125vw 1.5625vw;
 	color: #ffffff;
 	text-align: center;
 	display: inline-block;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-		 -o-border-radius: 5px;
-		 	border-radius: 5px;
+	-webkit-border-radius: 0.260vw;
+	   -moz-border-radius: 0.260vw;
+		 -o-border-radius: 0.260vw;
+		 	border-radius: 0.260vw;
 	-webkit-transition: all .35s;
 	   -moz-transition: all .35s;
 	    -ms-transition: all .35s;
@@ -358,32 +393,32 @@ a:active{
 	ICON
 ====================================== */
 .clean-blurb-icon-only{
-	margin-bottom: 50px;
+	margin-bottom: 2.604vw;
 	text-align: center;
-	padding: 20px;
+	padding: 1.0416vw;
 }
 .clean-blurb-icon-only:hover {
 	border-color: #333;
 }
 
 .clean-blurb-icon-only i{
-	width: 130px;
-	height: 130px;
-	margin: 0px auto 30px;
+	width: 6.770vw;
+	height: 6.770vw;
+	margin: 0 auto 1.5625vw;
 	text-align: center;
-	line-height: 107px;
-	padding: 8px;
-	background: transparent url("../images/3.png") no-repeat scroll center center / 123px auto;
+	line-height: 5.57vw;
+	padding: 0.416vw;
+	background: transparent url("../images/3.png") no-repeat scroll center center / 6.406vw auto;
 	color: #F1F1F1 !important;
-	font-size: 45px;
+	font-size: 40.260vw;
 }
 .clean-blurb-icon-only i:hover{
 	background-color: #fff;
 }
 .clean-blurb-icon-only h3{
-	font-size: 16px;
-	margin-top: 25px;
-	margin-bottom: 15px;
+	font-size: 0.833vw;
+	margin-top: 20.260vw;
+	margin-bottom: 0.78125vw;
 }
 
 .clean-blurb-icon-only p{
@@ -392,18 +427,18 @@ a:active{
 
 
 .clean-blurb-round-icon .clean-icon{
-	width: 130px;
-	height: 130px;
-	margin: 0px auto 30px;
+	width: 6.770vw;
+	height: 6.770vw;
+	margin: 0 auto 1.5625vw;
 	text-align: center;
 	line-height: 0;
-	padding: 8px;
-	background: transparent url("../images/3.png") no-repeat scroll center center / 123px auto;
+	padding: 0.416vw;
+	background: transparent url("../images/3.png") no-repeat scroll center center / 6.406vw auto;
 }
 
 .clean-blurb-round-icon .clean-icon i{
-	line-height: 100px;
-	font-size: 36px;
+	line-height: 5.20vw;
+	font-size: 1.875vw;
 	color: #dadada;
 }
 
@@ -416,7 +451,7 @@ a:active{
 }
 
 .clean-blurb-round-icon:hover .clean-icon{
-	border: 1px solid rgba(0,0,0,0);
+	border: 0.0520vw solid rgba(0,0,0,0);
 }
 
 .clean-blurb-round-icon:hover .clean-icon i{
@@ -425,10 +460,10 @@ a:active{
 
 .clean-blurb-round-icon h3{
 	text-align: center;
-	font-size: 18px;
+	font-size: 0.9375vw;
 	color: #616161;
 	margin-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 0.78125vw;
 	-webkit-transition: all .3s linear;
 	   -moz-transition: all .3s linear;
 	    -ms-transition: all .3s linear;
@@ -443,7 +478,7 @@ a:active{
 
 .clean-icones{
 	overflow: hidden;
-	padding: 20px;
+	padding: 1.0416vw;
 }
 
 .clean-icones:last-child{
@@ -451,15 +486,15 @@ a:active{
 }
 
 .clean-icones .clean-icon{
-	width: 70px;
-	height: 70px;
+	width: 3.645vw;
+	height: 3.645vw;
 	margin: 0 auto;
 	text-align: center;
 	float: left;
-	margin-right: 30px;
-	margin-bottom: 15px;
-	border-radius: 5px;
-	border: 1px solid #dadada;
+	margin-right: 1.5625vw;
+	margin-bottom: 0.78125vw;
+	border-radius: 0.260vw;
+	border: 0.0520vw solid #dadada;
 }
 
 .clean-icones.clean-square-dark .clean-icon{
@@ -467,20 +502,20 @@ a:active{
 }
 
 .clean-icones .clean-icon i{
-	line-height: 70px;
-	font-size: 36px;
+	line-height: 3.645vw;
+	font-size: 1.875vw;
 }
 
 .clean-icones .clean-blurb-text{
 	float: left;
-	width: 260px;
+	width: 13.5vw;
 }
 
 .clean-icones .clean-blurb-text h3{
-	font-size: 16px;
+	font-size: 0.833vw;
 	margin-top: 0;
-	margin-bottom: 15px;
-	padding-bottom: 15px;
+	margin-bottom: 0.78125vw;
+	padding-bottom: 0.78125vw;
 	position: relative;
 	-webkit-transition: all .3s linear;
 	   -moz-transition: all .3s linear;
@@ -491,8 +526,8 @@ a:active{
 
 .clean-icones .clean-blurb-text h3:after{
 	content: '';
-	width: 30px;
-	height: 2px;
+	width: 1.5625vw;
+	height: 0.104vw;
 	background-color: #ffffff;
 	position: absolute;
 	bottom: 0;
@@ -505,24 +540,24 @@ a:active{
 }
 
 .clean-line{
-	width: 100px;
-	height: 1px;
-	margin: 20px auto;
+	width: 5.20vw;
+	height: 0.0520vw;
+	margin: 1.0416vw auto;
 }
 
 section {
 	/* background: url(../images/top_1.png) bottom center no-repeat,
 	url(../images/bottom_1.png) top center no-repeat;
-	background-size: 60px;  */
-	border-bottom: 1px solid #cccccc;
-	/* border-top: 1px solid #cccccc; */
+	background-size: 3.125vw;  */
+	border-bottom: 0.0520vw solid #cccccc;
+	/* border-top: 0.0520vw solid #cccccc; */
 }
 
 /* ===================================
 	SECTIONS
 ====================================== */
 .clean-section-wrapper{
-	padding: 60px 0;
+	padding: 3.125vw 0;
 	overflow: hidden;
 }
 
@@ -533,21 +568,21 @@ section {
 .clean-section-header h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 1.5625vw;
 	color: #313131;
 }
 
 .clean-section-header h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 1.5625vw;
 	color: #313131;
 }
 
 .clean-section-header h1 span{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 1.5625vw;
 }
 
 .clean-section-header p{
@@ -566,13 +601,13 @@ section {
 .clean-section-header-parallax h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 1.5625vw;
 }
 
 .clean-section-header-parallax h1 span{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 1.5625vw;
 }
 
 .clean-section-header-parallax p{
@@ -591,16 +626,10 @@ section {
     border-radius: 0;
     position: fixed;
     width: 100%;
-	height: 8%;
-	line-height: 100px;  
-    padding: 15px 0;
+	height: 4vw;
+	line-height: 5.20vw;  
     margin-bottom: 0;
     z-index: 10;
-    -webkit-transition: all .35s;
-       -moz-transition: all .35s;
-        -ms-transition: all .35s;
-         -o-transition: all .35s;
-            transition: all .35s;
 	border-bottom: none; /* 灰色分界线 */
 }
 
@@ -609,28 +638,15 @@ header.clean-page-header .clean-main-menu{
 }
 
 .clean-main-menu .navbar-brand{
-    padding: 30px 0;
+    padding: 1.5625vw 0;
 }
 
 .clean-main-menu .navbar-nav{
     float: right;
-    padding: 30px 0;
+    padding: 1.5625vw 0;
 }
 
-.clean-main-menu .navbar-nav li a{
-	color: #fff;
-    font-size: 25px !important;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 30px !important;
-    -webkit-transition: all .3s;
-       -moz-transition: all .3s;
-        -ms-transition: all .3s;
-         -o-transition: all .3s;
-            transition: all .3s;
-}
+
 
 .clean-main-menu .navbar-nav li a:hover,
 .clean-main-menu .navbar-nav li.active a{
@@ -648,7 +664,7 @@ header.clean-page-header .clean-main-menu{
 	background-color: var(--theme-color--);
 	padding: 0;
 	position: fixed;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0), 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 0.104vw 0.208vw 0 rgba(0, 0, 0, 0), 0 0.104vw 0.520vw 0 rgba(0, 0, 0, 0.08);
 	opacity: 0.95; /* 透明度，0.0~1.0 */
     transition: opacity 0.3s; /* 平滑过渡 */
 }
@@ -678,11 +694,11 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-main-slides h1.clean-slider-text-big{
-	font-size: 48px;
+	font-size: 2.5vw;
 	color: #ffffff;
 	text-transform: uppercase;
 	margin-top: 0;
-	margin-bottom: 25px;
+	margin-bottom: 20.260vw;
 }
 
 .clean-main-slides .clean-slider-text h1 span{
@@ -693,22 +709,22 @@ header.clean-page-header .clean-main-menu.minified{
 .clean-main-slides p{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	font-size: 30px !important;
+	font-size: 1.5625vw !important;
 	color: #ffffff;
 	margin-bottom: 0;
 }
 
 .sp-arrow {
-	width: 10px;
-	height: 100px !important;
+	width: 0.520vw;
+	height: 5.20vw !important;
     display: none !important;
 }
 
 .clean-slider .sp-buttons {
-  padding-top: 10px;
+  padding-top: 0.520vw;
   position: absolute;
   text-align: center;
-  bottom: 20px;
+  bottom: 1.0416vw;
 }
 
 .clean-slider .sp-button {
@@ -717,10 +733,10 @@ header.clean-page-header .clean-main-menu.minified{
 	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-block;
-	height: 40px;
-	margin: 4px;
-	width: 40px;
-	background: transparent url("../images/3.png") no-repeat scroll center center / 20px auto;
+	height: 2.083vw;
+	margin: 0.208vw;
+	width: 2.083vw;
+	background: transparent url("../images/3.png") no-repeat scroll center center / 1.0416vw auto;
 }
 
 
@@ -739,7 +755,7 @@ header.clean-page-header .clean-main-menu.minified{
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: relative;
-	padding-bottom: 120px;
+	padding-bottom: 6.25vw;
 	overflow: hidden;
 }
 
@@ -749,7 +765,7 @@ header.clean-page-header .clean-main-menu.minified{
 	FEATURED WORK
 ====================================== */
 .clean-portfolio-work-item{
-	height: 2120px;
+	height: 110vw;
 	position: relative;
 }
 
@@ -774,9 +790,9 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-portfolio-work-item .clean-work-meta li{
-	width: 120px;
-	height: 120px;
-	margin-bottom: 1px;
+	width: 6.25vw;
+	height: 6.25vw;
+	margin-bottom: 0.0520vw;
 	text-align: center;
 	opacity: 0;
 	transform: scale(0);
@@ -798,16 +814,16 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-port-work-details .clean-work-meta li a i{
-	font-size: 30px;
+	font-size: 1.5625vw;
 	color: #FFF;
-	line-height: 75px;
+	line-height: 70.260vw;
 }
 
 .clean-port-work-details .clean-port-work-desc{
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	padding: 15px 0;
+	padding: 0.78125vw 0;
 	background-color: rgba(40,41,46,0.8);
 	opacity: 0;
 	-webkit-transform: translateY(100%);
@@ -833,13 +849,13 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-port-work-details .clean-port-work-desc h3{
-	font-size: 18px;
+	font-size: 0.9375vw;
 	margin-top: 0;
-	margin-bottom: 5px;
+	margin-bottom: 0.260vw;
 }
 
 .clean-port-work-details .clean-port-work-desc p a{
-	font-size: 14px;
+	font-size: 0.729vw;
 	color: #ffffff;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -847,20 +863,20 @@ header.clean-page-header .clean-main-menu.minified{
 
 .clean-port-work-details .clean-port-work-desc .clean-like-btn {
 	text-align: center;
-	padding: 10px 15px;
+	padding: 0.520vw 0.78125vw;
 }
 
 .clean-port-work-details .clean-port-work-desc .clean-like-btn a{
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-size: 0.9375vw;
 	font-weight: 400;
 	color: #ffffff;
 }
 
 .clean-port-work-details .clean-port-work-desc .clean-like-btn a i{
-	font-size: 21px;
+	font-size: 1.093vw;
 	color: #ffffff;
-	margin-right: 5px;
+	margin-right: 0.260vw;
 }
 
 
@@ -869,7 +885,7 @@ header.clean-page-header .clean-main-menu.minified{
 	OFFERS
 ====================================== */
 .clean-offer-section{
-	padding-bottom: 30px;
+	padding-bottom: 1.5625vw;
 }
 
 
@@ -879,22 +895,22 @@ header.clean-page-header .clean-main-menu.minified{
 	CUSTOM SECTION
 ====================================== */
 .clean-custom-sec-text p{
-	margin-bottom: 20px;
+	margin-bottom: 1.0416vw;
 }
 
 .clean-custom-sec-text h3{
-	font-size: 18px;
+	font-size: 0.9375vw;
 	color: #616161;
-	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 1.0416vw;
 }
 
 .clean-custom-sec-text ul{
-	margin-left: 30px;
+	margin-left: 1.5625vw;
 }
 
 .clean-custom-sec-text ul li{
-	margin-bottom: 10px;
+	margin-bottom: 0.520vw;
 }
 
 .clean-custom-sec-text ul li:last-child{
@@ -902,8 +918,8 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-custom-sec-text ul li i{
-	font-size: 14px;
-	margin-right: 10px;
+	font-size: 0.729vw;
+	margin-right: 0.520vw;
 }
 
 
@@ -913,13 +929,13 @@ header.clean-page-header .clean-main-menu.minified{
 ====================================== */
 .clean-testimonial-section{
 	position: relative;
-	padding: 120px 0;
+	padding: 6.25vw 0;
 	overflow: hidden;	
 }
 
 .clean-member-img-wrapper img {
 	border-radius: 50%;
-	margin-bottom: 20px;
+	margin-bottom: 1.0416vw;
 }
 
 .clean-testimonial-wrapper{
@@ -929,7 +945,7 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-testimonial-wrapper .comment-icon{
-	font-size: 24px;
+	font-size: 1.25vw;
 	text-align: center;
 }
 
@@ -938,12 +954,12 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-testimonial p{
-	font-size: 16px;
-	margin-bottom: 20px;
+	font-size: 0.833vw;
+	margin-bottom: 1.0416vw;
 }
 
 .clean-testimonial p.clean-client-info{
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-weight: 700;
 	margin-bottom: 0
 }
@@ -954,12 +970,12 @@ header.clean-page-header .clean-main-menu.minified{
 	PRICING
 ====================================== */
 .clean-pricing-section{
-	padding: 120px 0;
+	padding: 6.25vw 0;
 }
 
 .clean-pricing-plans{
 	text-align: center;
-	padding: 30px 0;
+	padding: 1.5625vw 0;
 	background-color: #ffffff;
 }
 
@@ -968,7 +984,7 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .recommended-titles {
-	padding: 15px 0;
+	padding: 0.78125vw 0;
 }
 
 .recommended-titles h2 {
@@ -984,49 +1000,49 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-pricing-plans .clean-pricing-titles{
-	margin-bottom: 40px;
+	margin-bottom: 2.083vw;
 	text-align: center;
 }
 
 .clean-pricing-plans .clean-pricing-titles h2{
-	font-size: 24px;
+	font-size: 1.25vw;
 	font-weight: 700;
-	margin-bottom: 5px;
+	margin-bottom: 0.260vw;
 }
 
 .clean-pricing-plans .clean-pricing-titles p{
-	font-size: 16px;
+	font-size: 0.833vw;
 }
 
 .clean-pricing-plans .clean-pricing-titles p span{
-	font-size: 30px;
+	font-size: 1.5625vw;
 	font-weight: 300;
 }
 
 .clean-pricing-plans .clean-pricing-service-name{
-	margin-bottom: 20px;
+	margin-bottom: 1.0416vw;
 }
 
 .clean-pricing-plans ul li{
 	text-align: center;
-	padding: 10px 0;
+	padding: 0.520vw 0;
 }
 
 .clean-pricing-plans ul li:last-child{
-	border-bottom: 0px solid;
+	border-bottom: 0 solid;
 }
 .clean-pricing-plans a.clean-signup-btn{
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-weight: 700;
 	color: #ffffff;
-	padding: 15px 30px;
+	padding: 0.78125vw 1.5625vw;
 	text-align: center;
 	display: inline-block;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-		 -o-border-radius: 5px;
-		 	border-radius: 5px;
+	-webkit-border-radius: 0.260vw;
+	   -moz-border-radius: 0.260vw;
+		 -o-border-radius: 0.260vw;
+		 	border-radius: 0.260vw;
 	-webkit-transition: all .35s;
 	   -moz-transition: all .35s;
 	    -ms-transition: all .35s;
@@ -1052,7 +1068,7 @@ header.clean-page-header .clean-main-menu.minified{
 	background: none;
 	background-size: cover;
 	position: relative;
-	padding: 120px 0;
+	padding: 6.25vw 0;
 	overflow: hidden;
 }
 
@@ -1061,10 +1077,10 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-contact-section .clean-contact-address ul li{
-	margin-bottom: 25px;
-	font-size: 14px;
+	margin-bottom: 20.260vw;
+	font-size: 0.729vw;
 	position: relative;
-	padding: 15px;
+	padding: 0.78125vw;
 }
 
 .clean-contact-section .clean-contact-address ul li:last-child{
@@ -1072,53 +1088,53 @@ header.clean-page-header .clean-main-menu.minified{
 }
 
 .clean-contact-section .clean-contact-address ul li i{
-	font-size: 50px;
-	line-height: 55px;
+	font-size: 2.604vw;
+	line-height: 50.260vw;
 	color: #ffffff;
 }
 
 .clean-contact-section .clean-contact-form .clean-input-fields{
-	margin-bottom: 20px;
+	margin-bottom: 1.0416vw;
 }
 
 .clean-contact-section .clean-contact-form .clean-input-fields label{
 	display: block;
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-family: 'Raleway',sans-serif;
 	font-weight: 400;
-	margin-bottom: 10px;
+	margin-bottom: 0.520vw;
 }
 
 .clean-contact-section .clean-contact-form .clean-input-fields input{
 	width: 100%;
-	height: 40px;
+	height: 2.083vw;
 	background-color: transparent;
-	border: 1px solid #999999;
-	padding-left: 15px;
-	padding-right: 15px;
+	border: 0.0520vw solid #999999;
+	padding-left: 0.78125vw;
+	padding-right: 0.78125vw;
 }
 
 .clean-contact-section .clean-contact-form .clean-input-fields textarea{
 	width: 100%;
 	background-color: transparent;
-	border: 1px solid #999999;
-	padding: 15px;
+	border: 0.0520vw solid #999999;
+	padding: 0.78125vw;
 }
 
 .clean-contact-section .clean-contact-form input[type='submit']{
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 0.729vw;
 	font-weight: 700;
 	color: #ffffff;
-	padding: 15px 30px;
+	padding: 0.78125vw 1.5625vw;
 	text-align: center;
 	display: inline-block;
 	outline: 0;
-	border: 0px solid;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-		 -o-border-radius: 5px;
-		 	border-radius: 5px;
+	border: 0 solid;
+	-webkit-border-radius: 0.260vw;
+	   -moz-border-radius: 0.260vw;
+		 -o-border-radius: 0.260vw;
+		 	border-radius: 0.260vw;
 	-webkit-transition: all .35s;
 	   -moz-transition: all .35s;
 	    -ms-transition: all .35s;
@@ -1136,23 +1152,23 @@ header.clean-page-header .clean-main-menu.minified{
 	OWL PAGINATIONS
 ====================================== */
 .owl-theme .owl-controls {
-  margin-top: 30px;
+  margin-top: 1.5625vw;
   text-align: center;
 }
 
 .owl-theme .owl-controls .owl-page span {
   background-color: transparent;
-  border-radius: 0px;
+  border-radius: 0;
   display: block;
-  height: 10px;
-  margin: 5px 5px;
+  height: 0.520vw;
+  margin: 0.260vw 0.260vw;
   opacity: 1;
-  width: 10px;
+  width: 0.520vw;
   border-radius: 50%;
 }
 
 .owl-theme .owl-controls .owl-page.active span {
-  border: 1px solid rgba(0,0,0,0);
+  border: 0.0520vw solid rgba(0,0,0,0);
 
 }
 
@@ -1162,7 +1178,7 @@ header.clean-page-header .clean-main-menu.minified{
 ====================================== */
 footer{
 	background-color: #28292e;
-	padding: 0px;
+	padding: 0;
 	overflow: hidden;
 
 }
@@ -1174,23 +1190,23 @@ footer.background-two .clean-footer-content {
     display: flex;             /* 启用 flex 布局 */
     justify-content: center;   /* 垂直居中 */
     align-items: center;       /* 水平居中 */
-    height: 70px;              /* footer 高度，可修改 */
+    height: 3.645vw;              /* footer 高度，可修改 */
     text-align: center;        /* 文字水平居中 */
 }
 
 
 /* footer .clean-footer-logo{
 	text-align: center;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 1.0416vw;
+	margin-top: 1.0416vw;
 } */
 
 footer p{
 	text-align: center;
 	color: #818181;
-	font-size: 15px;
+	font-size: 0.78125vw;
 	text-transform: uppercase;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 footer ul {
@@ -1199,13 +1215,13 @@ footer ul {
 
 footer ul li{
 	float: left;
-	margin-right: 15px;
-	padding: 8px 10px;
-	width: 50px;
+	margin-right: 0.78125vw;
+	padding: 0.416vw 0.520vw;
+	width: 2.604vw;
 	background: url("../images/3.png") center no-repeat;
-	background-size: 45px;
-	height: 50px;
-	line-height: 40px
+	background-size: 40.260vw;
+	height: 2.604vw;
+	line-height: 2.083vw
 }
 
 footer ul li:last-child{
@@ -1213,11 +1229,11 @@ footer ul li:last-child{
 }
 
 footer ul li a{
-	font-size: 21px;
+	font-size: 1.093vw;
 }
 
 footer ul li a i{
-	font-size: 21px;
+	font-size: 1.093vw;
 	color: #818181;
 	-webkit-transition: all .3s;
 	   -moz-transition: all .3s;
