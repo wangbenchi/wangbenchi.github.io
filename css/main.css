@@ -392,6 +392,8 @@ a:active{
 /* ===================================
 	ICON
 ====================================== */
+
+
 .clean-blurb-icon-only{
 	margin-bottom: 2.604vw;
 	text-align: center;
@@ -417,7 +419,7 @@ a:active{
 }
 .clean-blurb-icon-only h3{
 	font-size: 0.833vw;
-	margin-top: 20.260vw;
+	margin-top: 0.20260vw;
 	margin-bottom: 0.78125vw;
 }
 
