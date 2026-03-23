@@ -115,6 +115,8 @@ header {
     list-style: none;        /* 清除列表默认样式（如果有） */
     margin: 0; 
 	overflow: hidden;
+	position: absolute;
+	top:-0.05vw;
 }
 
 .clean-main-menu .navbar-nav li a{
